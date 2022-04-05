@@ -25,6 +25,6 @@ Feature: As a user, I should be accessing all the main modules of the app.
 
       | user7    | Userpass123 |
 
-#      | user34   | Userpass123 |
-#
-#      | user99   | Userpass123 |
+      | user34   | Userpass123 |
+
+      | user99   | Userpass123 |

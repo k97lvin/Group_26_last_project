@@ -31,6 +31,18 @@ public class FilePage {
 //    @FindBy(xpath = "//span[.='Something9']/span")
 //    public List<WebElement> webTable;
 
+    @FindBy(xpath = "(//a[@class='action action-menu permanent'])[1]")
+    public WebElement actionIcon;
+
+    @FindBy(xpath = "//a[@data-action='Favorite']")
+    public WebElement addToFavoritesIcon;
+
+    @FindBy(xpath = "//a[@class='svg nav-icon-favorites active']")
+    public WebElement favoritesListIcon;
+
+      @FindBy(xpath = "//span[@class='innernametext']")
+    public WebElement folderNameInFavorites;
+
 
 
 }

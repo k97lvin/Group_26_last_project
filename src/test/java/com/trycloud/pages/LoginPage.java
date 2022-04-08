@@ -1,6 +1,7 @@
 package com.trycloud.pages;
 
 import com.trycloud.utilities.Driver;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,7 +25,9 @@ public class LoginPage {
     public WebElement warningMesage;
 
     public void login(String arg0, String arg1) {
+        Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
         userName.sendKeys(arg0);
-        userName.sendKeys(arg1);
+        password.sendKeys(arg1 + Keys.ENTER);
+
     }
 }

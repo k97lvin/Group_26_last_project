@@ -34,6 +34,14 @@ public class MainModules {
     public WebElement calendar;
     @FindBy(xpath = "//a[@aria-label='Deck']")
     public WebElement deck;
+//_______________________________________________________
+
+    @FindBy(xpath = "//div[@class='icon-contacts menutoggle']")
+    public WebElement contactsMenuIcon;
+
+    @FindBy(xpath = "//div[@class='full-name']")
+    public List<WebElement> contacsList;
+
 
     public void listOfModule() {
         List<WebElement> list = new ArrayList<>();

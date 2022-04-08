@@ -19,7 +19,7 @@ public class ContactMenu_StepDefinitions {
         for (WebElement eachWebElement : mainModules.contacsList) {
             boolean displayed = eachWebElement.isDisplayed();
             Assert.assertTrue(displayed);
-          //  Assert.assertTrue(eachWebElement.isDisplayed());
+            //  Assert.assertTrue(eachWebElement.isDisplayed());
         }
     }
 }
